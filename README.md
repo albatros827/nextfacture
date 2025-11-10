@@ -1,11 +1,19 @@
 # NextFacture
 
-**NextFacture** est une application web open source (Next.js) pour **visualiser, comprendre et tester** la facturation électronique en France (EN 16931, formats UBL / CII / Factur-X).
+**NextFacture** est une application web open source (Next.js) pour **visualiser, comprendre et tester** la facturation électronique en France.
+
+Le projet s’appuie sur :
+- le **modèle sémantique EN 16931** et ses déclinaisons françaises,
+- conforme à la norme AFNOR [XP-Z12-012](https://www.boutique.afnor.org/fr-fr/norme/xp-z12012/formats-et-profils-des-messages-factures-et-statuts-de-cycle-de-vie-constit/fa213344/448043),
+
+et permet de générer des factures de test dans les **syntaxes** reconnues par l’écosystème français :
+**UBL**, **CII**, **Factur-X**.
 
 Objectif : offrir un **bac à sable pédagogique** pour les équipes métiers, techniques et éditeurs, sans remplacer un outil de facturation ou une PDP.
 
 > NextFacture n’est pas une PDP, ni un validateur officiel.  
 > C’est un outil d’aide à la compréhension, au prototypage et à la démonstration.
+
 
 ---
 
