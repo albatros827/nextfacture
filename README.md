@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextFacture
 
-## Getting Started
+**NextFacture** est une application web open source (Next.js) pour **visualiser, comprendre et tester** la facturation électronique en France (EN 16931, formats UBL / CII / Factur-X).
 
-First, run the development server:
+Objectif : offrir un **bac à sable pédagogique** pour les équipes métiers, techniques et éditeurs, sans remplacer un outil de facturation ou une PDP.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> NextFacture n’est pas une PDP, ni un validateur officiel.  
+> C’est un outil d’aide à la compréhension, au prototypage et à la démonstration.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Ce que fait NextFacture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Afficher une facture selon le **profil EN 16931 (France)**.
+- Expliquer champ par champ :
+    - libellé métier,
+    - identifiant EN 16931 (BT/BG),
+    - caractère obligatoire / optionnel,
+    - Règles métiers et techniques
+    - correspondance UBL et UN/CEFACT.
+- Générer des **factures de test** dans les syntaxes acceptées par la réforme :
+    - UBL 2.1  
+    - UN/CEFACT CII D22B,
+    - Et le format Factur-X
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Socle obligatoire (MVP)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] Formulaire facture **profil EN 16931 (champs obligatoires)**.
+- [ ] Fiche d’info par champ (description, règles principales, mapping).
+- [ ] Export facture de test en **UBL**.
+- [ ] Export facture de test en **CII**.
+- [ ] Export facture de test en **Factur-X**.
 
-## Deploy on Vercel
+### Socle facultatif
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ ] Ajout des champs optionnels EN 16931.
+- [ ] Affichage visuel des différences "minimum" / "complet".
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Lecture de factures
+
+- [ ] Importer une facture UBL et l’afficher dans le formulaire.
+- [ ] Importer une facture CII.
+- [ ] Importer une facture Factur-X.
+
+### Socle étendu (plus tard)
+
+- [ ] Support du profil **Extended / CTC-FR**.
+- [ ] Cas avancés (acomptes, auto-facturation, etc.).
+
+---
+
+## Public visé
+
+- Éditeurs et intégrateurs.
+- Équipes finance / produit.
+- Toute personne qui veut **voir** la réforme plutôt que seulement la lire.
+
+---
+
+E-mail de contact: next-facture@outlook.com
