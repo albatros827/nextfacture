@@ -1,7 +1,17 @@
 {
   "name": "nextfacture",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "NextFacture est une application web open source (Next.js) pour visualiser, comprendre et tester la facturation électronique en France",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albatros827/nextfacture"
+  },
+  "license": "Apache-2.0",
+  "private": false,
+  "author":{
+    "name": "albatros827",
+    "email": "next-facture@outlook.com"
+  },
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
