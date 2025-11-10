@@ -67,6 +67,9 @@ Objectif : offrir un **bac à sable pédagogique** pour les équipes métiers, t
 - Équipes finance / produit.
 - Toute personne qui veut **voir** la réforme plutôt que seulement la lire.
 
+## Licence
+- Le code de NextFacture est publié sous licence **Apache 2.0**.
 ---
+## Contact
 
-E-mail de contact: next-facture@outlook.com
+E-mail: next-facture@outlook.com
